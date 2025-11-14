@@ -1,0 +1,1 @@
+{"corner_ratio":0.00693359375,"_timestamp":1.7621864361549578e+09,"epoch_avg_loss":0.10229801835743248,"_wandb":{"runtime":18893},"batch_total_loss":0.10354358702898026,"epoch_time":62.874024629592896,"_runtime":18893,"_step":599,"batch_distance_loss":0.06802712380886078,"batch_focal_loss":0.035516463220119476,"epoch":299}

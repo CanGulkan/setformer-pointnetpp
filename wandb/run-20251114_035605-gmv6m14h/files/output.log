@@ -1,0 +1,48 @@
+Calculated input_dim: 8
+  - XYZ: 3
+  - Color (RGBA): 4
+  - Intensity: 1
+  - Group IDs: 0
+  - Border weights: 0
+
+GPU Memory: 6.00 GB
+Using batch_size: 40
+Building DEEPSETS model with 8 input channels
+Total parameters: 397,058
+Trainable parameters: 397,058
+Starting training on cuda
+Model input channels: 8
+Training samples: 5677
+Epoch 0, Batch 0, Total Loss: 0.0677, Focal: 0.0198, Distance: 0.0479, Corners: 459/102400 (0.004)
+Epoch 0, Batch 10, Total Loss: 0.0777, Focal: 0.0227, Distance: 0.0550, Corners: 540/102400 (0.005)
+Epoch 0, Batch 20, Total Loss: 6.0557, Focal: 2.8382, Distance: 3.2174, Corners: 793/102400 (0.008)
+Epoch 0, Batch 30, Total Loss: 0.0296, Focal: 0.0088, Distance: 0.0208, Corners: 558/102400 (0.005)
+Epoch 0, Batch 40, Total Loss: 0.0460, Focal: 0.0136, Distance: 0.0324, Corners: 904/102400 (0.009)
+Traceback (most recent call last):
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 355, in <module>
+    main()
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 343, in main
+    train_with_preprocessed_data(
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 292, in train_with_preprocessed_data
+    model = train_set_transformer(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 98, in train_set_transformer
+    for batch_idx, batch in enumerate(train_loader):
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 1402, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

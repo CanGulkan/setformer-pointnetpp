@@ -1,0 +1,13 @@
+{"time":"2025-11-14T04:10:51.9455634+03:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-14T04:10:52.627136+03:00","level":"INFO","msg":"stream: created new stream","id":"calogbed"}
+{"time":"2025-11-14T04:10:52.6277947+03:00","level":"INFO","msg":"handler: started","stream_id":"calogbed"}
+{"time":"2025-11-14T04:10:52.6329527+03:00","level":"INFO","msg":"stream: started","id":"calogbed"}
+{"time":"2025-11-14T04:10:52.6335756+03:00","level":"INFO","msg":"writer: started","stream_id":"calogbed"}
+{"time":"2025-11-14T04:10:52.6335756+03:00","level":"INFO","msg":"sender: started","stream_id":"calogbed"}
+{"time":"2025-11-14T04:10:53.2850323+03:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":37}
+{"time":"2025-11-14T04:10:53.5481526+03:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":8}
+{"time":"2025-11-14T04:11:28.6625864+03:00","level":"INFO","msg":"stream: closing","id":"calogbed"}
+{"time":"2025-11-14T04:11:29.7770993+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-14T04:11:30.1553861+03:00","level":"INFO","msg":"handler: closed","stream_id":"calogbed"}
+{"time":"2025-11-14T04:11:30.1559464+03:00","level":"INFO","msg":"sender: closed","stream_id":"calogbed"}
+{"time":"2025-11-14T04:11:30.1559464+03:00","level":"INFO","msg":"stream: closed","id":"calogbed"}

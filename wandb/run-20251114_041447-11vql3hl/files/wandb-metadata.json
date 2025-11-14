@@ -1,0 +1,44 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "CPython 3.11.9",
+  "startedAt": "2025-11-14T01:14:47.356361Z",
+  "args": [
+    "--model_type",
+    "deepsets"
+  ],
+  "program": "C:\\Users\\can_g\\Desktop\\Github_Project\\building3d-dataloader\\train_set_transformer.py",
+  "codePath": "train_set_transformer.py",
+  "codePathLocal": "train_set_transformer.py",
+  "git": {
+    "remote": "https://github.com/cansdev/building3d-dataloader.git",
+    "commit": "b131e7ac57d8bb1113fa3125b93a62b77a47e38f"
+  },
+  "email": "breakerdeath72@gmail.com",
+  "root": "C:\\Users\\can_g\\Desktop\\Github_Project\\building3d-dataloader",
+  "host": "CanGulkan",
+  "executable": "C:\\Users\\can_g\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "511178018816",
+      "used": "327355330560"
+    }
+  },
+  "memory": {
+    "total": "16908427264"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+      "memoryTotal": "6442450944",
+      "cudaCores": 3840,
+      "architecture": "Ampere",
+      "uuid": "GPU-d08e9ed1-fc31-90aa-be1b-ee55565e270e"
+    }
+  ],
+  "cudaVersion": "12.1",
+  "writerId": "bihs23e7r7c846r3bnf1s2u3jwghk237"
+}

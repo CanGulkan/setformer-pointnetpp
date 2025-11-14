@@ -1,0 +1,69 @@
+Calculated input_dim: 8
+  - XYZ: 3
+  - Color (RGBA): 4
+  - Intensity: 1
+  - Group IDs: 0
+  - Border weights: 0
+Using 8 input channels for PointNet2 model
+    CornerNet init: total_channels=8, feature_channels=5, border_attention=False, sampling=FPS
+Starting training on cuda
+Model input channels: 8
+Training samples: 5677
+Epoch 0, Batch 0, Total Loss: 0.7698, Focal: 0.3732, Distance: 0.3966, Corners: 1/5120 (0.000)
+Epoch 0, Batch 10, Total Loss: 0.3242, Focal: 0.1526, Distance: 0.1716, Corners: 19/5120 (0.004)
+Epoch 0, Batch 20, Total Loss: 0.1505, Focal: 0.0723, Distance: 0.0782, Corners: 2/5120 (0.000)
+Epoch 0, Batch 30, Total Loss: 0.1199, Focal: 0.0544, Distance: 0.0655, Corners: 22/5120 (0.004)
+Epoch 0, Batch 40, Total Loss: 0.1159, Focal: 0.0474, Distance: 0.0684, Corners: 53/5120 (0.010)
+Epoch 0, Batch 50, Total Loss: 0.0999, Focal: 0.0381, Distance: 0.0618, Corners: 64/5120 (0.013)
+Epoch 0, Batch 60, Total Loss: 0.0606, Focal: 0.0255, Distance: 0.0351, Corners: 25/5120 (0.005)
+Epoch 0, Batch 70, Total Loss: 0.1030, Focal: 0.0369, Distance: 0.0662, Corners: 91/5120 (0.018)
+Epoch 0, Batch 80, Total Loss: 0.0487, Focal: 0.0199, Distance: 0.0289, Corners: 30/5120 (0.006)
+Epoch 0, Batch 90, Total Loss: 0.0382, Focal: 0.0161, Distance: 0.0221, Corners: 18/5120 (0.004)
+Epoch 0, Batch 100, Total Loss: 0.0334, Focal: 0.0143, Distance: 0.0191, Corners: 18/5120 (0.004)
+Epoch 0, Batch 110, Total Loss: 0.0269, Focal: 0.0120, Distance: 0.0149, Corners: 7/5120 (0.001)
+Epoch 0, Batch 120, Total Loss: 0.0358, Focal: 0.0139, Distance: 0.0219, Corners: 25/5120 (0.005)
+Epoch 0, Batch 130, Total Loss: 0.0341, Focal: 0.0134, Distance: 0.0207, Corners: 18/5120 (0.004)
+Epoch 0, Batch 140, Total Loss: 0.0233, Focal: 0.0100, Distance: 0.0133, Corners: 6/5120 (0.001)
+Epoch 0, Batch 150, Total Loss: 0.0360, Focal: 0.0138, Distance: 0.0222, Corners: 24/5120 (0.005)
+Epoch 0, Batch 160, Total Loss: 0.0400, Focal: 0.0142, Distance: 0.0258, Corners: 30/5120 (0.006)
+Epoch 0, Batch 170, Total Loss: 0.0373, Focal: 0.0136, Distance: 0.0237, Corners: 29/5120 (0.006)
+Epoch 0, Batch 180, Total Loss: 0.0347, Focal: 0.0129, Distance: 0.0217, Corners: 32/5120 (0.006)
+Epoch 0, Batch 190, Total Loss: 0.0493, Focal: 0.0168, Distance: 0.0325, Corners: 49/5120 (0.010)
+Epoch 0, Batch 200, Total Loss: 0.0406, Focal: 0.0139, Distance: 0.0267, Corners: 31/5120 (0.006)
+Epoch 0, Batch 210, Total Loss: 0.0270, Focal: 0.0098, Distance: 0.0172, Corners: 32/5120 (0.006)
+Traceback (most recent call last):
+  File "c:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train.py", line 353, in <module>
+    main()
+  File "c:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train.py", line 343, in main
+    train_with_preprocessed_data(
+  File "c:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train.py", line 320, in train_with_preprocessed_data
+    model = train_model(train_loader, dataset_config, calculated_input_dim, resume_from_checkpoint)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train.py", line 121, in train_model
+    corner_logits, _ = model(point_clouds)  # [B, N]
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\can_g\Desktop\Github_Project\building3d-dataloader\models\PointNet2.py", line 103, in forward
+    l1_xyz, l1_points = self.sa1(l0_xyz, l0_points)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\can_g\Desktop\Github_Project\building3d-dataloader\models\pointnet2_utils.py", line 234, in forward
+    new_xyz = index_points(xyz, farthest_point_sample(xyz, S))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\can_g\Desktop\Github_Project\building3d-dataloader\models\sampling.py", line 24, in farthest_point_sample
+    farthest = torch.max(distance, -1)[1]
+               ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

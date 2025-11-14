@@ -1,0 +1,33 @@
+Calculated input_dim: 8
+  - XYZ: 3
+  - Color (RGBA): 4
+  - Intensity: 1
+  - Group IDs: 0
+  - Border weights: 0
+Traceback (most recent call last):
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/multiprocessing/pool.py", line 853, in next
+    item = self._items.popleft()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 319, in <module>
+    main()
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 312, in main
+    train_with_preprocessed_data()
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 282, in train_with_preprocessed_data
+    building3D_dataset = build_dataset(dataset_config.Building3D)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/datasets/__init__.py", line 31, in build_dataset
+    "train": Building3DReconstructionDataset(dataset_config, split_set="train", logger=logger),
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/datasets/building3d.py", line 395, in __init__
+    self._ensure_preprocessed(logger)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/datasets/building3d.py", line 415, in _ensure_preprocessed
+    results = list(tqdm(
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/site-packages/tqdm/std.py", line 1169, in __iter__
+    for obj in iterable:
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/multiprocessing/pool.py", line 858, in next
+    self._cond.wait(timeout)
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/threading.py", line 312, in wait
+    waiter.acquire()
+KeyboardInterrupt

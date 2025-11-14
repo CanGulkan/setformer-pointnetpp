@@ -1,0 +1,66 @@
+_wandb:
+    value:
+        cli_version: 0.22.3
+        e:
+            og6g7a9naox710b13oxj800jcsd05uom:
+                args:
+                    - --checkpoint
+                    - checkpoint_epoch_150.pth
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 16
+                cpu_count_logical: 24
+                cudaVersion: "12.4"
+                disk:
+                    /:
+                        total: "502796288000"
+                        used: "127787745280"
+                email: cann.sari@icloud.com
+                executable: /home/barisozcan/miniconda3/envs/pytorch3d/bin/python
+                git:
+                    commit: 17b7e124a916266e78be6fa1de74df87c72f42b4
+                    remote: https://github.com/cansdev/building3d-dataloader.git
+                gpu: NVIDIA GeForce RTX 4070
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 5888
+                      memoryTotal: "12878610432"
+                      name: NVIDIA GeForce RTX 4070
+                      uuid: GPU-98a15898-b1e9-8c28-25b6-25c13d290c3b
+                host: yonetici-Precision-3660
+                memory:
+                    total: "33324986368"
+                os: Linux-6.8.0-48-generic-x86_64-with-glibc2.39
+                program: /home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py
+                python: CPython 3.9.24
+                root: /home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader
+                startedAt: "2025-11-11T16:18:00.712048Z"
+                writerId: og6g7a9naox710b13oxj800jcsd05uom
+        m: []
+        python_version: 3.9.24
+        t:
+            "1":
+                - 1
+                - 5
+                - 51
+                - 53
+            "2":
+                - 1
+                - 5
+                - 51
+                - 53
+            "3":
+                - 16
+            "4": 3.9.24
+            "5": 0.22.3
+            "12": 0.22.3
+            "13": linux-x86_64
+architecture:
+    value: PointNet2
+dataset:
+    value: Buildin3D-Entry-Level
+epochs:
+    value: 300
+learning_rate:
+    value: 0.001

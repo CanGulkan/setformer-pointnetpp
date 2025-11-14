@@ -1,0 +1,44 @@
+Calculated input_dim: 8
+  - XYZ: 3
+  - Color (RGBA): 4
+  - Intensity: 1
+  - Group IDs: 0
+  - Border weights: 0
+
+GPU Memory: 6.00 GB
+⚠ Adjusted batch_size to 12 for Set Transformer on 6.0GB GPU
+⚠ Set Transformer architecture has been reduced for memory efficiency
+Using batch_size: 12
+Building TRANSFORMER model with 8 input channels
+⚠ GPU memory < 8GB detected (6.0GB)
+⚠ Using reduced Set Transformer architecture for memory efficiency
+Set Transformer initialized:
+  - Input channels: 8
+  - d_model: 128
+  - num_heads: 4
+  - num_layers: 3
+  - num_inducing_points: 16
+Total parameters: 1,239,297
+Trainable parameters: 1,239,297
+Starting training on cuda
+Model input channels: 8
+Training samples: 113
+GPU memory allocated: 0.00 GB
+Traceback (most recent call last):
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 386, in <module>
+    main()
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 374, in main
+    train_with_preprocessed_data(
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 302, in train_with_preprocessed_data
+    model = train_set_transformer(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 146, in train_set_transformer
+    loss.backward()
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\autograd\__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\autograd\graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.17 GiB. GPU 0 has a total capacity of 6.00 GiB of which 0 bytes is free. Of the allocated memory 3.74 GiB is allocated by PyTorch, and 1.14 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

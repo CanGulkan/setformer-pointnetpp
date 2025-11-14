@@ -1,0 +1,44 @@
+{
+  "os":  "Linux-6.8.0-48-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.9.24",
+  "startedAt":  "2025-11-11T16:22:40.087086Z",
+  "args":  [
+    "--checkpoint",
+    "checkpoint_epoch_150.pth"
+  ],
+  "program":  "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py",
+  "codePath":  "train.py",
+  "codePathLocal":  "train.py",
+  "git":  {
+    "remote":  "https://github.com/cansdev/building3d-dataloader.git",
+    "commit":  "17b7e124a916266e78be6fa1de74df87c72f42b4"
+  },
+  "email":  "cann.sari@icloud.com",
+  "root":  "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader",
+  "host":  "yonetici-Precision-3660",
+  "executable":  "/home/barisozcan/miniconda3/envs/pytorch3d/bin/python",
+  "cpu_count":  16,
+  "cpu_count_logical":  24,
+  "gpu":  "NVIDIA GeForce RTX 4070",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "502796288000",
+      "used":  "127787999232"
+    }
+  },
+  "memory":  {
+    "total":  "33324986368"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4070",
+      "memoryTotal":  "12878610432",
+      "cudaCores":  5888,
+      "architecture":  "Ada",
+      "uuid":  "GPU-98a15898-b1e9-8c28-25b6-25c13d290c3b"
+    }
+  ],
+  "cudaVersion":  "12.4",
+  "writerId":  "9e0sxaom3kh0g06u9nrdcrp0nt1131in"
+}

@@ -1,0 +1,61 @@
+Calculated input_dim: 8
+  - XYZ: 3
+  - Color (RGBA): 4
+  - Intensity: 1
+  - Group IDs: 0
+  - Border weights: 0
+
+GPU Memory: 6.00 GB
+⚠ Adjusted batch_size to 20 for Set Transformer on 6.0GB GPU
+Using batch_size: 20
+Building TRANSFORMER model with 8 input channels
+Set Transformer initialized:
+  - Input channels: 8
+  - d_model: 256
+  - num_heads: 8
+  - num_layers: 4
+  - num_inducing_points: 32
+Total parameters: 6,691,969
+Trainable parameters: 6,691,969
+Starting training on cuda
+Model input channels: 8
+Training samples: 113
+Traceback (most recent call last):
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 355, in <module>
+    main()
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 343, in main
+    train_with_preprocessed_data(
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 292, in train_with_preprocessed_data
+    model = train_set_transformer(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py", line 134, in train_set_transformer
+    corner_logits, global_features = model(point_clouds)  # [B, N], [B, d_model]
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\models\SetTransformer.py", line 329, in forward
+    X = layer(X, mask)  # [B, N, d_model]
+        ^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\models\SetTransformer.py", line 104, in forward
+    attn_output, _ = self.mha(X, X, X, mask)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\models\SetTransformer.py", line 51, in forward
+    scores = torch.matmul(Q, K.transpose(-2, -1)) / math.sqrt(self.d_k)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.91 GiB. GPU 0 has a total capacity of 6.00 GiB of which 0 bytes is free. Of the allocated memory 4.70 GiB is allocated by PyTorch, and 13.30 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

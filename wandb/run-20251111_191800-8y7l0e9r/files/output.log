@@ -1,0 +1,42 @@
+Calculated input_dim: 8
+  - XYZ: 3
+  - Color (RGBA): 4
+  - Intensity: 1
+  - Group IDs: 0
+  - Border weights: 0
+Using 8 input channels for PointNet2 model
+    CornerNet init: total_channels=8, feature_channels=5, border_attention=False, sampling=FPS
+Starting training on cuda
+Model input channels: 8
+Training samples: 5677
+Epoch 0, Batch 0, Total Loss: 0.3838, Focal: 0.1767, Distance: 0.2071, Corners: 693/102400 (0.007)
+Epoch 0, Batch 10, Total Loss: 0.1294, Focal: 0.0558, Distance: 0.0736, Corners: 914/102400 (0.009)
+Epoch 0, Batch 20, Total Loss: 0.0947, Focal: 0.0417, Distance: 0.0530, Corners: 537/102400 (0.005)
+Traceback (most recent call last):
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 363, in <module>
+    main()
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 356, in main
+    train_with_preprocessed_data()
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 344, in train_with_preprocessed_data
+    model = train_model(train_loader, dataset_config, calculated_input_dim)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 153, in train_model
+    corner_logits, _ = model(point_clouds)  # [B, N]
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/models/PointNet2.py", line 106, in forward
+    l4_xyz, l4_points = self.sa4(l3_xyz, l3_points)
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/models/pointnet2_utils.py", line 181, in forward
+    new_xyz, new_points = sample_and_group(self.npoint, self.radius, self.nsample, xyz, points, use_voxel=self.use_voxel)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/models/pointnet2_utils.py", line 111, in sample_and_group
+    fps_idx = farthest_point_sample(xyz, npoint)
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/models/sampling.py", line 14, in farthest_point_sample
+    centroids = torch.zeros(B, npoint, dtype=torch.long).to(device)
+KeyboardInterrupt

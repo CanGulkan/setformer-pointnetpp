@@ -1,0 +1,23 @@
+2025-11-13 01:54:57,390 INFO    MainThread:14500 [wandb_setup.py:_flush():80] Current SDK version is 0.23.0
+2025-11-13 01:54:57,390 INFO    MainThread:14500 [wandb_setup.py:_flush():80] Configure stats pid to 14500
+2025-11-13 01:54:57,390 INFO    MainThread:14500 [wandb_setup.py:_flush():80] Loading settings from C:\Users\can_g\.config\wandb\settings
+2025-11-13 01:54:57,390 INFO    MainThread:14500 [wandb_setup.py:_flush():80] Loading settings from C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\wandb\settings
+2025-11-13 01:54:57,391 INFO    MainThread:14500 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-11-13 01:54:57,391 INFO    MainThread:14500 [wandb_init.py:setup_run_log_directory():713] Logging user logs to C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\wandb\run-20251113_015457-oq9dkjq2\logs\debug.log
+2025-11-13 01:54:57,391 INFO    MainThread:14500 [wandb_init.py:setup_run_log_directory():714] Logging internal logs to C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\wandb\run-20251113_015457-oq9dkjq2\logs\debug-internal.log
+2025-11-13 01:54:57,391 INFO    MainThread:14500 [wandb_init.py:init():840] calling init triggers
+2025-11-13 01:54:57,391 INFO    MainThread:14500 [wandb_init.py:init():845] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'architecture': 'PointNet2', 'dataset': 'Buildin3D-Entry-Level', 'epochs': 300, '_wandb': {}}
+2025-11-13 01:54:57,391 INFO    MainThread:14500 [wandb_init.py:init():888] starting backend
+2025-11-13 01:55:02,046 INFO    MainThread:14500 [wandb_init.py:init():891] sending inform_init request
+2025-11-13 01:55:02,061 INFO    MainThread:14500 [wandb_init.py:init():899] backend started and connected
+2025-11-13 01:55:02,062 INFO    MainThread:14500 [wandb_init.py:init():969] updated telemetry
+2025-11-13 01:55:02,113 INFO    MainThread:14500 [wandb_init.py:init():993] communicating run to backend with 90.0 second timeout
+2025-11-13 01:55:05,632 INFO    MainThread:14500 [wandb_init.py:init():1040] starting run threads in backend
+2025-11-13 01:55:05,865 INFO    MainThread:14500 [wandb_run.py:_console_start():2504] atexit reg
+2025-11-13 01:55:05,866 INFO    MainThread:14500 [wandb_run.py:_redirect():2352] redirect: wrap_raw
+2025-11-13 01:55:05,866 INFO    MainThread:14500 [wandb_run.py:_redirect():2421] Wrapping output streams.
+2025-11-13 01:55:05,866 INFO    MainThread:14500 [wandb_run.py:_redirect():2444] Redirects installed.
+2025-11-13 01:55:05,868 INFO    MainThread:14500 [wandb_init.py:init():1080] run started, returning control to user process
+2025-11-13 01:55:52,181 INFO    wandb-AsyncioManager-main:14500 [service_client.py:_forward_responses():80] Reached EOF.
+2025-11-13 01:55:52,182 INFO    wandb-AsyncioManager-main:14500 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

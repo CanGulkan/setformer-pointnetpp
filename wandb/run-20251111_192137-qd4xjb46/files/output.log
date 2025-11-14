@@ -1,0 +1,32 @@
+Calculated input_dim: 8
+  - XYZ: 3
+  - Color (RGBA): 4
+  - Intensity: 1
+  - Group IDs: 0
+  - Border weights: 0
+Using 8 input channels for PointNet2 model
+    CornerNet init: total_channels=8, feature_channels=5, border_attention=False, sampling=FPS
+Starting training on cuda
+Model input channels: 8
+Training samples: 5677
+Epoch 0, Batch 0, Total Loss: 0.7479, Focal: 0.3459, Distance: 0.4021, Corners: 722/102400 (0.007)
+Epoch 0, Batch 10, Total Loss: 0.2181, Focal: 0.0980, Distance: 0.1201, Corners: 858/102400 (0.008)
+Epoch 0, Batch 20, Total Loss: 0.1298, Focal: 0.0570, Distance: 0.0728, Corners: 743/102400 (0.007)
+Epoch 0, Batch 30, Total Loss: 0.0907, Focal: 0.0393, Distance: 0.0514, Corners: 632/102400 (0.006)
+Epoch 0, Batch 40, Total Loss: 0.0760, Focal: 0.0321, Distance: 0.0439, Corners: 678/102400 (0.007)
+Epoch 0, Batch 50, Total Loss: 0.0603, Focal: 0.0254, Distance: 0.0349, Corners: 525/102400 (0.005)
+Epoch 0, Batch 60, Total Loss: 0.0583, Focal: 0.0232, Distance: 0.0350, Corners: 729/102400 (0.007)
+Epoch 0, Batch 70, Total Loss: 0.0491, Focal: 0.0195, Distance: 0.0296, Corners: 618/102400 (0.006)
+Epoch 0, Batch 80, Total Loss: 0.0419, Focal: 0.0165, Distance: 0.0254, Corners: 573/102400 (0.006)
+Epoch 0, Batch 90, Total Loss: 0.0517, Focal: 0.0189, Distance: 0.0328, Corners: 872/102400 (0.009)
+Epoch 0, Batch 100, Total Loss: 0.0391, Focal: 0.0149, Distance: 0.0241, Corners: 587/102400 (0.006)
+Traceback (most recent call last):
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 363, in <module>
+    main()
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 356, in main
+    train_with_preprocessed_data()
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 344, in train_with_preprocessed_data
+    model = train_model(train_loader, dataset_config, calculated_input_dim)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 163, in train_model
+    total_loss += loss.item()
+KeyboardInterrupt

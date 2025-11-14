@@ -1,0 +1,12 @@
+{"time":"2025-11-13T02:24:38.7469467+03:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-13T02:24:40.7014626+03:00","level":"INFO","msg":"stream: created new stream","id":"0nskc9x7"}
+{"time":"2025-11-13T02:24:40.7014626+03:00","level":"INFO","msg":"handler: started","stream_id":"0nskc9x7"}
+{"time":"2025-11-13T02:24:40.7041669+03:00","level":"INFO","msg":"stream: started","id":"0nskc9x7"}
+{"time":"2025-11-13T02:24:40.7041669+03:00","level":"INFO","msg":"sender: started","stream_id":"0nskc9x7"}
+{"time":"2025-11-13T02:24:40.7041669+03:00","level":"INFO","msg":"writer: started","stream_id":"0nskc9x7"}
+{"time":"2025-11-13T14:38:43.4005033+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/can_g-a/Building3D/0nskc9x7/file_stream\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-11-13T14:38:53.5206637+03:00","level":"INFO","msg":"stream: closing","id":"0nskc9x7"}
+{"time":"2025-11-13T14:38:54.859473+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-13T14:38:55.2833683+03:00","level":"INFO","msg":"handler: closed","stream_id":"0nskc9x7"}
+{"time":"2025-11-13T14:38:55.2838944+03:00","level":"INFO","msg":"sender: closed","stream_id":"0nskc9x7"}
+{"time":"2025-11-13T14:38:55.2838944+03:00","level":"INFO","msg":"stream: closed","id":"0nskc9x7"}

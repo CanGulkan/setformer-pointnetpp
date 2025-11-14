@@ -1,0 +1,1 @@
+{"_timestamp":1.7628760415662658e+09,"epoch_avg_loss":0.004285196194108179,"epoch_time":61.261739015579224,"focal_gamma":4,"_wandb":{"runtime":9273},"batch_focal_loss":0.001713561825454235,"epoch":150,"batch_total_loss":0.005735656712204218,"_runtime":9273,"corner_ratio":0.008994140625,"_step":301,"batch_distance_loss":0.004022094886749983}

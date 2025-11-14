@@ -1,0 +1,62 @@
+Calculated input_dim: 8
+  - XYZ: 3
+  - Color (RGBA): 4
+  - Intensity: 1
+  - Group IDs: 0
+  - Border weights: 0
+Using 8 input channels for PointNet2 model
+    CornerNet init: total_channels=8, feature_channels=5, border_attention=False, sampling=FPS
+Starting training on cuda
+Model input channels: 8
+Training samples: 5677
+Epoch 0, Batch 0, Total Loss: 0.3881, Focal: 0.1801, Distance: 0.2080, Corners: 672/102400 (0.007)
+Epoch 0, Batch 10, Total Loss: 0.1157, Focal: 0.0507, Distance: 0.0650, Corners: 668/102400 (0.007)
+Epoch 0, Batch 20, Total Loss: 0.0660, Focal: 0.0279, Distance: 0.0381, Corners: 588/102400 (0.006)
+Epoch 0, Batch 30, Total Loss: 0.0567, Focal: 0.0224, Distance: 0.0342, Corners: 787/102400 (0.008)
+Epoch 0, Batch 40, Total Loss: 0.0536, Focal: 0.0201, Distance: 0.0335, Corners: 875/102400 (0.009)
+Epoch 0, Batch 50, Total Loss: 0.0477, Focal: 0.0180, Distance: 0.0297, Corners: 722/102400 (0.007)
+Epoch 0, Batch 60, Total Loss: 0.0395, Focal: 0.0147, Distance: 0.0248, Corners: 664/102400 (0.006)
+Epoch 0, Batch 70, Total Loss: 0.0343, Focal: 0.0128, Distance: 0.0214, Corners: 501/102400 (0.005)
+Epoch 0, Batch 80, Total Loss: 0.0384, Focal: 0.0136, Distance: 0.0248, Corners: 697/102400 (0.007)
+Epoch 0, Batch 90, Total Loss: 0.0397, Focal: 0.0137, Distance: 0.0260, Corners: 795/102400 (0.008)
+Epoch 0, Batch 100, Total Loss: 0.0458, Focal: 0.0153, Distance: 0.0305, Corners: 1007/102400 (0.010)
+Epoch 0, Batch 110, Total Loss: 0.0412, Focal: 0.0139, Distance: 0.0273, Corners: 823/102400 (0.008)
+Epoch 0, Batch 120, Total Loss: 0.0400, Focal: 0.0134, Distance: 0.0266, Corners: 841/102400 (0.008)
+Epoch 0, Batch 130, Total Loss: 0.0376, Focal: 0.0125, Distance: 0.0250, Corners: 803/102400 (0.008)
+Epoch 0, Batch 140, Total Loss: 0.0372, Focal: 0.0127, Distance: 0.0245, Corners: 777/102400 (0.008)
+Epoch 0 completed. Average Loss: 0.0587, Time: 62.44s, Total: 62.44s (1.04min)
+Checkpoint saved: output/checkpoint_epoch_0.pth
+  Config: use_color=True, use_intensity=True, use_group_ids=False, use_border_weights=False
+Epoch 1, Batch 0, Total Loss: 0.0274, Focal: 0.0094, Distance: 0.0180, Corners: 542/102400 (0.005)
+Epoch 1, Batch 10, Total Loss: 0.0335, Focal: 0.0112, Distance: 0.0223, Corners: 718/102400 (0.007)
+Epoch 1, Batch 20, Total Loss: 0.0286, Focal: 0.0097, Distance: 0.0189, Corners: 567/102400 (0.006)
+Epoch 1, Batch 30, Total Loss: 0.0441, Focal: 0.0143, Distance: 0.0298, Corners: 1012/102400 (0.010)
+Epoch 1, Batch 40, Total Loss: 0.0282, Focal: 0.0097, Distance: 0.0185, Corners: 550/102400 (0.005)
+Epoch 1, Batch 50, Total Loss: 0.0229, Focal: 0.0079, Distance: 0.0150, Corners: 426/102400 (0.004)
+Epoch 1, Batch 60, Total Loss: 0.0349, Focal: 0.0115, Distance: 0.0234, Corners: 788/102400 (0.008)
+Traceback (most recent call last):
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 363, in <module>
+    main()
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 356, in main
+    train_with_preprocessed_data()
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 344, in train_with_preprocessed_data
+    model = train_model(train_loader, dataset_config, calculated_input_dim)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/train.py", line 153, in train_model
+    corner_logits, _ = model(point_clouds)  # [B, N]
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/models/PointNet2.py", line 103, in forward
+    l1_xyz, l1_points = self.sa1(l0_xyz, l0_points)
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/models/pointnet2_utils.py", line 234, in forward
+    new_xyz = index_points(xyz, farthest_point_sample(xyz, S))
+  File "/home/barisozcan/miniconda3/envs/pytorch3d/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/models/sampling.py", line 23, in farthest_point_sample
+    distance[mask] = dist[mask]
+KeyboardInterrupt

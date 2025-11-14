@@ -1,0 +1,26 @@
+2025-11-11 23:14:01,474 INFO    MainThread:2702065 [wandb_setup.py:_flush():81] Current SDK version is 0.22.3
+2025-11-11 23:14:01,474 INFO    MainThread:2702065 [wandb_setup.py:_flush():81] Configure stats pid to 2702065
+2025-11-11 23:14:01,474 INFO    MainThread:2702065 [wandb_setup.py:_flush():81] Loading settings from /home/barisozcan/.config/wandb/settings
+2025-11-11 23:14:01,474 INFO    MainThread:2702065 [wandb_setup.py:_flush():81] Loading settings from /home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/wandb/settings
+2025-11-11 23:14:01,474 INFO    MainThread:2702065 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-11-11 23:14:01,474 INFO    MainThread:2702065 [wandb_init.py:setup_run_log_directory():706] Logging user logs to /home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/wandb/run-20251111_231401-d0uens16/logs/debug.log
+2025-11-11 23:14:01,474 INFO    MainThread:2702065 [wandb_init.py:setup_run_log_directory():707] Logging internal logs to /home/barisozcan/Desktop/wireframe-roof-prediction/building3d-dataloader/wandb/run-20251111_231401-d0uens16/logs/debug-internal.log
+2025-11-11 23:14:01,474 INFO    MainThread:2702065 [wandb_init.py:init():833] calling init triggers
+2025-11-11 23:14:01,474 INFO    MainThread:2702065 [wandb_init.py:init():838] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'architecture': 'PointNet2', 'dataset': 'Buildin3D-Entry-Level', 'epochs': 300, '_wandb': {}}
+2025-11-11 23:14:01,474 INFO    MainThread:2702065 [wandb_init.py:init():881] starting backend
+2025-11-11 23:14:01,685 INFO    MainThread:2702065 [wandb_init.py:init():884] sending inform_init request
+2025-11-11 23:14:01,695 INFO    MainThread:2702065 [wandb_init.py:init():892] backend started and connected
+2025-11-11 23:14:01,698 INFO    MainThread:2702065 [wandb_init.py:init():962] updated telemetry
+2025-11-11 23:14:01,707 INFO    MainThread:2702065 [wandb_init.py:init():986] communicating run to backend with 90.0 second timeout
+2025-11-11 23:14:02,351 INFO    MainThread:2702065 [wandb_init.py:init():1033] starting run threads in backend
+2025-11-11 23:14:02,387 INFO    MainThread:2702065 [wandb_run.py:_console_start():2506] atexit reg
+2025-11-11 23:14:02,387 INFO    MainThread:2702065 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2025-11-11 23:14:02,387 INFO    MainThread:2702065 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2025-11-11 23:14:02,387 INFO    MainThread:2702065 [wandb_run.py:_redirect():2446] Redirects installed.
+2025-11-11 23:14:02,388 INFO    MainThread:2702065 [wandb_init.py:init():1073] run started, returning control to user process
+2025-11-12 00:45:42,635 INFO    MainThread:2702065 [wandb_run.py:_finish():2272] finishing run can_g-a/Building3D/d0uens16
+2025-11-12 00:45:42,635 INFO    MainThread:2702065 [wandb_run.py:_atexit_cleanup():2471] got exitcode: 0
+2025-11-12 00:45:42,636 INFO    MainThread:2702065 [wandb_run.py:_restore():2453] restore
+2025-11-12 00:45:42,636 INFO    MainThread:2702065 [wandb_run.py:_restore():2459] restore done
+2025-11-12 00:45:44,011 INFO    MainThread:2702065 [wandb_run.py:_footer_sync_info():3835] logging synced files

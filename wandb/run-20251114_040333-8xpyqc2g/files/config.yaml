@@ -1,0 +1,65 @@
+_wandb:
+    value:
+        cli_version: 0.23.0
+        e:
+            v4gpzhprso25ec8lghmp891i39cdez9b:
+                codePath: train_set_transformer.py
+                codePathLocal: train_set_transformer.py
+                cpu_count: 8
+                cpu_count_logical: 16
+                cudaVersion: "12.1"
+                disk:
+                    /:
+                        total: "511178018816"
+                        used: "327353782272"
+                email: breakerdeath72@gmail.com
+                executable: C:\Users\can_g\AppData\Local\Programs\Python\Python311\python.exe
+                git:
+                    commit: b131e7ac57d8bb1113fa3125b93a62b77a47e38f
+                    remote: https://github.com/cansdev/building3d-dataloader.git
+                gpu: NVIDIA GeForce RTX 3060 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 3840
+                      memoryTotal: "6442450944"
+                      name: NVIDIA GeForce RTX 3060 Laptop GPU
+                      uuid: GPU-d08e9ed1-fc31-90aa-be1b-ee55565e270e
+                host: CanGulkan
+                memory:
+                    total: "16908427264"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\can_g\Desktop\Github_Project\building3d-dataloader\train_set_transformer.py
+                python: CPython 3.11.9
+                root: C:\Users\can_g\Desktop\Github_Project\building3d-dataloader
+                startedAt: "2025-11-14T01:03:33.016347Z"
+                writerId: v4gpzhprso25ec8lghmp891i39cdez9b
+        m: []
+        python_version: 3.11.9
+        t:
+            "1":
+                - 1
+                - 5
+                - 51
+                - 53
+            "2":
+                - 1
+                - 5
+                - 51
+                - 53
+            "3":
+                - 16
+            "4": 3.11.9
+            "5": 0.23.0
+            "8":
+                - 3
+            "12": 0.23.0
+            "13": windows-amd64
+architecture:
+    value: SetTransformer-transformer
+dataset:
+    value: Building3D-Entry-Level
+epochs:
+    value: 300
+learning_rate:
+    value: 0.001
